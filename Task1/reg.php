@@ -6,7 +6,7 @@
 
    $con = mysqli_connect($servername, $username, $password, $db_name);
    if (!$con) {
-   	 die("Faled to connect to the local server". mysqli_connect_error());
+   	 die("Failed to connect to the local server". mysqli_connect_error());
    }
    if (isset($_POST["submit"])) {
    	 if (!empty($_POST["uname"]) && !empty($_POST["age"]) && !empty($_POST["pass"])) {
